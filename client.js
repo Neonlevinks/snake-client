@@ -9,7 +9,8 @@ const conn = net.createConnection({
 const connEncode = conn.setEncoding('utf8');
 
 const connConnect = conn.on("connect", (client) => {
-  console.log(`${client} has connected!`);
+  console.log(`${client} sucessfulyl connected to game server`);
+  conn.write("Name: KAN")
 });
 
 const connData = conn.on('data', (data) => {
