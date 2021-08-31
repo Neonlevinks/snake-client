@@ -11,10 +11,10 @@ const connEncode = conn.setEncoding('utf8');
 const connConnect = conn.on("connect", (client) => {
   console.log(`${client} sucessfulyl connected to game server`);
   conn.write("Name: KAN");
-  conn.write("Move: up");
-  setInterval(() => {
-    conn.write("Move: left");
-  }, 500);
+ // conn.write("Move: up");
+ // setInterval(() => {
+ //   conn.write("Move: left");
+//}, 500);
 
 
 });
