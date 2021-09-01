@@ -1,3 +1,4 @@
+const { keyCommands } = require('./constants');
 
 const setupInput = function(conn) {
   connection = conn;
@@ -8,23 +9,10 @@ const setupInput = function(conn) {
   const handleUserInput = stdin.on('data', (key) => {
     if (key === '\u0003') {
       process.exit();
-    } else if (key === 'w') {
-      connection.write('Move: up');
-    } else if (key === 'a') {
-      connection.write('Move: left');
-    } else if (key === 's') {
-      connection.write('Move: down');
-    } else if (key === 'd') {
-      connection.write('Move: right');
-    } else if (key === 'b') {
-      connection.write('Say: You\'re going down!');
-    } else if (key === 'n') {
-      connection.write('Say: Nicely done!');
-    } else if (key === 'm') {
-      connection.write('Say: I played myself...');
+    } else if (`${key}` in keyCommands) {
+      connection.write(`${keyCommands[key]}`)
     }
   })
-
 
   return stdin;
 };
