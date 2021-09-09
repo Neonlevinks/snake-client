@@ -9,8 +9,8 @@ const conn = net.createConnection({
 
 const connEncode = conn.setEncoding('utf8');
 
-const connConnect = conn.on("connect", (client) => {
-  console.log(`${client} sucessfulyl connected to game server`);
+const connConnect = conn.on("connect", () => {
+  console.log(`${playerName} sucessfully connected to game server`);
   conn.write(`Name: ${playerName}`);
 
 });
@@ -19,11 +19,9 @@ const connData = conn.on('data', (data) => {
   console.log(`${data}`);
 });
 
-
-
-const connect = function () {
-  conn; 
-  connEncode; 
+const connect = function() {
+  conn;
+  connEncode;
   connConnect;
   connData;
 

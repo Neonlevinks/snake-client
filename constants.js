@@ -6,14 +6,14 @@ const keyCommands = {
   s: "Move: down",
   a: "Move: left",
   d: "Move: right",
-  b: "Say: You\'re going down!'", 
+  b: "Say: You're going down!'",
   n: "Say: Nicely done!",
   m: "Say: I played myself..."
-}
+};
 
 module.exports = {
   IP,
   PORT,
   playerName,
   keyCommands
-}
+};

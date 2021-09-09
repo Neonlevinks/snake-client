@@ -6,4 +6,4 @@ connect();
 let x = connect();
 setupInput(x);
 
-module.exports = x 
+module.exports = x;
