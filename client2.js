@@ -11,6 +11,11 @@ const connect = () => {
 
   conn.on('data', (data) => {
     console.log(data);
+  });
+
+  conn.on('connect', () => {
+    console.log('Your snake is in the game!');
+    conn.write("Name: KEV");
   })
   return conn;
 };
