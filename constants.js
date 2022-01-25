@@ -1,6 +1,6 @@
 const IP = 'localhost';
 const PORT = 50541;
-const playerName = "KAN";
+const playerName = "KEV";
 const keyCommands = {
   w: "Move: up",
   s: "Move: down",
