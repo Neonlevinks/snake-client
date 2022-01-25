@@ -1,6 +1,8 @@
-
+//import key commands for client
   
 const { keyCommands } = require('./constants');
+
+//establish input processing
 let connection;
 
 const setupInput = function(conn) {
@@ -14,6 +16,7 @@ const setupInput = function(conn) {
   return stdin;
 };
 
+//establish output based on keypress
 const handleUserInput = (key) => {
   if (key === '\u0003') {
     process.exit();
