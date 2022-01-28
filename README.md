@@ -10,7 +10,12 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
-- Navigate to the snek-multiplayer folder (for both client and server terminals)
-- On the server side terminal, run the server with `npm run launch`
-- On the client side terminal, run the client with `npm run play`
+- First open 2 terminals, one for the client and one for the server
+
+# Server Side
+- On the server side terminal, go to the server file with the following code: `cd snek-multiplayer`
+- Launch the game server with the following code `npm run launch`
+
+# Client side
+- On the server side terminal, go to the server file with the following code: `cd snek-multiplayer`
+- Launch the game server with the following code `npm run play`
